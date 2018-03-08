@@ -1,0 +1,17 @@
+{
+  "name": "lokibot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js debug",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "discord.js": "^11.3.0",
+    "discordjs-cmds": "^0.6.8"
+  }
+}
