@@ -60,13 +60,13 @@ ________/\\\\\\\\\__/\\\________/\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\\\_
 */
 
 function cmd_say(msg, args) {
-    msg.channel.send(args.join(' '))
     log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+    msg.channel.send(args.join(' '))
 }
 
 function cmd_ping(msg, args) {
-    lilcmd.ping(msg)
     log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+    lilcmd.ping(msg)
 }
 
 /*
@@ -82,52 +82,52 @@ __/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\_
 */
 
 function cmd_pet(msg, args) {
-    pet.cmd(msg, args)
     log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+    pet.cmd(msg, args)
 }
 
 function cmd_unit(msg, args) {
-    unit.cmd(msg, args)
     log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+    unit.cmd(msg, args)
 }
 
 function cmd_abk(msg, args) {
-    ss.cmd(msg, args)
     log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+    ss.cmd(msg, args)
 }
 
 function cmd_sh(msg, args) {
     args = args[0].split('-')
     if (args[0] == 1) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh1.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[1] == 2) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh2.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[2] == 3) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh3.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[3] == 4) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh4.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[4] == 5) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh5.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[5] == 6) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh6.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[6] == 7) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh7.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[7] == 8) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh8.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[8] == 9) {
+        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
         sh9.cmd(msg, args)
-        log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
     } else if (args[9] == 10) {
-        sh10.cmd(msg, args)
         log.log('CMDPARSER', `[USER: ${msg.member.user.tag}] executed command: '${msg.content}'`)
+        sh10.cmd(msg, args)
     } else if (args[10] == 11) {
 
     } else if (args[11] == 12) {
