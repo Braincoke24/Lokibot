@@ -10,12 +10,6 @@ class littleCmds {
             err: 0xe74c3c
         }
 
-        this.ping = function(msg) {
-            var chan = msg.channel,
-                author = msg.author
-            chan.send(`Pong! ${author}`)
-        }
-
         this.error = function(chan) {
             var message
             var emb = new RichEmbed()
@@ -25,6 +19,20 @@ class littleCmds {
                  message = m
             })
             return message
+        }
+
+        this.ping = function(msg) {
+            var chan = msg.channel,
+                author = msg.author
+            chan.send(`Pong! ${author}`)
+        }
+
+        this.wbt = function(msg) {
+
+        }
+
+        this.ss = function(msg) {
+            
         }
     }
 }
