@@ -1,5 +1,4 @@
 const { RichEmbed } = require('discord.js')
-const LogFile = require('./logFiles')
 
 class petEmbed {
     constructor(bot, log) {

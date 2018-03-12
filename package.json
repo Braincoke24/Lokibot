@@ -12,6 +12,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "discord.js": "^11.3.0",
-    "discordjs-cmds": "^0.6.8"
+    "discordjs-cmds": "^0.6.8",
+    "npm": "^5.7.1"
   }
 }

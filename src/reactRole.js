@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const LogFile = require('./logFiles')
 
     /**
      * Create instance of ReactRole

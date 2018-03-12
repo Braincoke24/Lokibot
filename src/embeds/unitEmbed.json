@@ -1,0 +1,29 @@
+{
+    "footer": "Liste aller Einheiten mit .einheit liste",
+    "bonus": {
+        "description": "__**Liste der benötigten Einheiten mit 5* Pet Bonus:**__",
+        "fields": {
+            "0": "**Resistenz:**\n  **Feuerresistenz:**\n    27 Flammengeister | Pet: Rena\n  **Naturresistenz:**\n    27 Elementalisten | Pet: Chichi",
+            "1": "**Level überspringen:**\n    20 Hippogriffs | Pet: Hippong\n    14 Fairy | Pet: Tinki",
+            "2": "**Geisterausruhen:**\n    22 Dunkler Geist | Pet: Osma\n    22 Schwertmeister | Pet: Saul",
+            "3": "**Fünffacher Speed:**\n    12 Priester | Pet: Frosti",
+            "4": "**Kräftigen:**\n    10 Schwerttänzer | Pet: Oscar\n    10 Walküren | Pet: Sarah\n    10 Eisgeister | Pet: Juda\n    10 Incubus | Pet: Black",
+            "5": "**Innere Leidenschaft:**\n    10 Nagas | Pet: Sepferdchen\n    10 Medusa | Pet: Dunkle Schlange\n    10 Sylphide | Pet: Windy\n    10 Steampunk | Pet: E-77\n    +20 Einheiten (gesamt: 60), aufgeteilt wie ihr wollt",
+            "6": "**Geistererwachen:**\n    5 Lindwurmreiter | Pet: Wakong\n    5 Alchemisten | Pet: Häschen\n    5 Piloten | Pet: Winky\n    5 Lichs | Pet: Cora",
+            "7": "**Skill Push Einheiten**\n    24 Zauberer | Pet: Totem\n    24 Frostdämon | Pet: Bamba",
+            "8": "**Wiederbelebungsteam:**\n    12 Kampftrommler | Pet: Bambam\n    24 Dunkle Bogenschützen | Pet: Mondfee",
+            "9": "**Gildenraid:**\n    5 Dunkle Admirale | Pet: Jingger\n    5 Hoyden Goku | Pet: Nimbus\n    5 Heißblütiger Xuanzang | Pet: Mir\n    5 Raptorreiter | Pet: Rapty",
+            "10": "**Outlandschlacht:**\n    15 Dunkle Elfen | Pet: Chesher\n    17 Kleriker | Pet: Bernard"
+        },
+        "footer": "Schau nach unter .tier <Tier/Einheit> oder .einheit <Einheit/Tier>"
+    },
+    "golem": {
+        "color": "human",
+        "description": "__**Entwickelter Golem**__\n\n★★★★★★ [Boden Einheit]",
+        "fields": {
+            "0": "__**Fähigkeiten:**__\n\n+ Normaler Angriff: Fügt den nahestehenden Gegnern um das Ziel Flächenschaden hinzu, wobei das Ziel zu 100% betäubt wird und die umliegenden Einheiten zufällig betäubt werden.\n\n+ Skillangriff: Beschwört ein Schutzschild das gegen physische Angriffe immun macht und das Ziel zu 100% betäubt und dabei doppelten schaden macht. Umliegende Gegner werden zufällig Betäubt.",
+            "1": "+ Spezielle Fähigkeit 1: Werde niemals ohnmächtig (Immun gegen Betäubung)\n\n+ Spezielle Fähigkeit 2: Bei eingehenden Angriffen besteht eine Chance darauf, dass ein Schild beschworen wird, welches gegen 99% der physischen und magischen Angriffe schützt."
+        },
+        "thumbnail": "https://cdn.discordapp.com/attachments/416337633871003659/416340091116453918/UI_UNIT_ICONS0014.png"
+    }
+}

@@ -1,5 +1,4 @@
 const { RichEmbed } = require('discord.js')
-const LogFile = require('./logFiles')
 
 class shortcut {
     constructor(bot, log) {
@@ -10,8 +9,16 @@ class shortcut {
             err: 0xe74c3c
         }
         this.aliases = {
+    //UNITS
+        //HUMANS
             //infantry
+            'infantry': 'infantry',
+            'infanterie': 'infantry',
+            'inf': 'infantry',
             //heavy infantry
+            'heavy infantry': 'heavy infantry',
+            'schwere infantrie': 'heavy infantry',
+            'hi': 'heavy infantry',
             //fire bird
             //musketeer
             //hammer knight
@@ -35,13 +42,15 @@ class shortcut {
             'flammengeist': 'flame spirit'
             //cleric
             //winged knight
-
+        //ELVES
             //elf archer
             //elf warrior
             //poison archer
             //high elf archer
             //green eagle
             //wind mage
+            //ent
+            //wolf warrior
             //unicorn knight
             //fairy
             //druid
@@ -53,7 +62,7 @@ class shortcut {
             //hippogriff
             //elementalist
             //windwalker
-
+        //UNDEADS
             //skeleton unit
             //warlock
             //ghost
@@ -74,7 +83,7 @@ class shortcut {
             //dark spirit
             //dark elf
             //abyss mage
-
+        //ORCS
             //orc fighter
             //orc hunter
             //frost mage
@@ -93,6 +102,181 @@ class shortcut {
             //blade master
             //frost demon
             //siren
+    //PETS
+        //GEN 0
+            //mambo
+            //joe
+            //mummy
+            //piggy
+            //potang
+            //uni
+            //joker
+            //snork
+            //phoenic
+            //indy
+            //grim reaper
+            //woola
+        //GEN 1
+            //icy
+            //tinkey
+            //moon
+        //GEN 2
+            //magic lamp
+            //squirrel
+            //sleepy
+            //boom boom
+        //GEN 3
+            //griffy
+            //leo
+            //devil
+            //totem
+        //GEN 4
+            //mir
+            //nimbus
+            //jingger
+            //rapty
+        //GEN 5
+            //winky
+            //bunny
+            //cora
+            //wakong
+        //GEN 6
+            //e-77
+            //windy
+            //dark snake
+            //seahorse
+        //GEN 7
+            //sarah
+            //oscar
+            //black
+            //juda
+        //GEN 8
+            //rena
+            //hippong
+            //osma
+            //saul
+        //GEN 9
+            //bernard
+            //chichi
+            //chesher
+            //bamba
+        //GEN 10
+            //cat knight
+            //mori
+            //cerbero
+            //octopa
+        //RAID 1
+            //skole
+            //harping
+            //gnome
+            //bellial
+            //senior skole
+            //senior harping
+            //senior gnome
+            //senior bellial
+        //RAID 2
+            //lavark
+            //hellyme
+            //furion
+            //bahat
+            //senior lavark
+            //senior hellyme
+            //senior furion
+            //senior bahat
+        //RAID 3
+            //tarad
+            //neru
+            //gorgon
+            //beel
+            //senior tarad
+            //senior neru
+            //senior gorgon
+            //senior beel
+        //EVENT
+            //red
+            //blue
+            //green
+            //purple
+            //celeste
+            //h-reaper
+            //christy
+            //toby
+            //hallokin
+            //cookoo
+            //nills
+            //rudolph
+            //lime
+            //jindo
+            //flame sorceress
+            //forest sorceress
+        //SECRET SHOP
+            //black tortoise
+            //phoenix
+            //white tiger
+            //cleo
+            //blue dragon
+            //gold dragon
+            //human guardian
+            //elf guardian
+            //undead guardian
+            //orc guardian
+        //GREEK GODS
+            //dionysus
+            //zeus
+            //aphrodite
+            //ares
+            //athena
+            //artemis
+            //apollo
+            //demeter
+            //poseidon
+            //hephaistos
+            //hermes
+            //hera
+        //NORDIC GODS
+            //loki
+            //freya
+            //odin
+            //thor
+            //vernandi
+            //skuld
+            //urd
+            //skadi
+            //freyr
+            //baldur
+            //tyr
+            //heimdall
+        //OUTLAND BATTLE
+            //puppy
+            //coby
+            //hotbee
+            //pangpang
+            //lye
+            //hot pony
+
+            //jelly
+            //opener
+            //boongboong
+            //nepen quiver
+            //greenbee
+            //gently
+            
+            //big eye
+            //clapper
+            //black jack
+            //eye bye
+            //red horn
+            //pallabook
+            
+            //punpun
+            //celt
+            //chilly
+            //wingvl
+            //jason
+            //teaser
+            /*
+
+            */
         }
 
         this.cmd = function(msg, args) {

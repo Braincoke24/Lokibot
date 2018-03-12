@@ -1,0 +1,12 @@
+{
+    "footer": "Liste aller Tiere mit .tier liste",
+    "mambo": {
+        "color": "human",
+        "description": "__**Mambo**__\nHelden Paar:\n`Golem`",
+        "fields": {
+            "0": "**Skill 1:**\nGold   +`300, 800, 3000, 8000, 15000`%\n\n**Skill 2:**\nGildenkrieg Menschen LP   +`9, 12, 15`%\n\n**Skill 3 Geheime Fähigkeit des Golems:**\n\n- LP unter 30% -> immun gegen schwächende Fertigkeiten\n\n- schnelle Bewegung zum ersten Gegner\n\n- erhöht LP und Verteidigung aller Einheiten um 10%\n\n- Goldlevel Max: `+30, T1 +50, T2 +70, T3 +90`\n",
+            "1": "**Hochland der Geister:**\n`1-1 RL 2`\n`1-5 RL 2`\n`2-10 RL 12`\n`12-16 RL 94`\n\n**Tierpunkte:**\n`2, 4, 6, 8, 10`"
+        },
+        "thumbnail": "https://cdn.discordapp.com/attachments/416337633871003659/416337792897908746/UI_PET1.png"
+    }
+}

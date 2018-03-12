@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
-const LogFile = require('./logFiles')
 
-class events {
+class dcEvents {
     constructor(bot, log) {
         this.bot = bot
         this.log = log
@@ -59,4 +58,4 @@ class events {
     }
 }
 
-exports.events = events
+exports.dcEvents = dcEvents

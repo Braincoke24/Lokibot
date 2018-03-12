@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const LogFile = require('./logFiles')
 
 class ownerCmd {
     constructor(bot, log) {

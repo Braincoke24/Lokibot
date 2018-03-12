@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const LogFile = require('./logFiles')
 
 class unitEmbed {
     constructor(bot, log) {
@@ -14,143 +13,32 @@ class unitEmbed {
             grey: 0x7f8c8d
         }
         this.emojis = {
-            humanIc: '<:mensch:421777620116439041>',
-            elfIc: '<:elf:421777620032552971>',
-            undeadIc: '<:untot:421777620565360650>',
-            orcIc: '<:ef_orc_icon:421777620309377026>',
-            human: '',
-            elf: '',
-            undead: '',
-            orc: '',
-            pydmg: '<:py:421777371893596170>',
-            madmg: '<:ef_magic:421777620451983361>',
-            zwi: '<:zwi:421777620166901761>',
-            male: '<:ef_male:421777620481474560>',
-            female: '<:ef_female:421777620426817546>',
-            fly: ''
-        }
-        this.aliases = {
-            //list
-            'list': 'list',
-            //bonus
-            'bonus': 'bonus',
-            //infantry
-            'infantry': 'infantry',
-            'infanterie': 'infantry',
-            //heavy infantry
-            'heavy infantry': 'heavy infantry',
-            'schwere infanterie': 'heavy infantry',
-            'hi': 'heavy infantry',
-            //fire bird
-            //musketeer
-            'musketeer': 'musketeer',
-            'musketier': 'musketeer',
-            'musk': 'musketeer',
-            //hammer knight
-            'hammer knight': 'hammer knight',
-            'hammer ritter': 'hammer knight',
-            'hk': 'hammer knight',
-            //cavalry knight
-            'cavalry knight': 'cavalry knight',
-            'kavallerie ritter': 'cavalry knight',
-            //golem
-            'golem': 'golem',
-            //fire mage
-            'fire mage': 'fire mage',
-            'feuermagier': 'fire mage',
-            'fm': 'fire mage',
-            //gunner
-            'gunner': 'gunner',
-            'kannonier': 'gunner',
-            //priest
-            'priest': 'priest',
-            'priester': 'priest',
-            //aladdin
-            'aladdin': 'aladdin',
-            //griffin rider
-            'griffin rider': 'griffin rider',
-            'greifen reiter': 'griffin rider',
-            //hot-blooded xuanzang
-            'hot-blooded xuanzang': 'hot-blooded xuanzang',
-            'heißblütiger xuanzang': 'hot-blooded xuanzang',
-            //pilot
-            'pilot': 'pilot',
-            //steampunk
-            'steampunk': 'steampunk',
-            //valkyrie
-            'valkyrie': 'valkyrie',
-            'Walküre': 'valkyrie',
-            'valk': 'valkyrie',
-            //flame spirit
-            'flame spirit': 'flame spirit',
-            'flammengeist': 'flame spirit',
-            'fs': 'flame spirit',
-            //cleric
-            'cleric': 'cleric',
-            'kleriker': 'cleric',
-            //winged knight
-            'winged knight': 'winged knight',
-            'geflügelter ritter': 'winged knight',
-            'wk': 'winged knight'
-        }
-
-        /**
-         * 
-         * @param {Discord.message} msg         Message from user
-         * @param {String[]} args               Arguments of message
-         */
-        this.cmd = function(msg, args) {
-            var chan = msg.channel,
-                text = args.join(' ').toLowerCase()
-            if (text in this.aliases) {
-                text = this.aliases[text]
-                if (text == 'list') {
-                    this.list(chan)
-                } else if (text == 'bonus') {
-                    this.bonus(chan)
-                } else if (text == 'infantry') {
-                    this.infantry(chan)
-                } else if (text == 'heavy infantry') {
-                    this.heavyInfantry(chan)
-                }  else if (text == 'fire bird') {
-                    this.fireBird(chan)
-                } else if (text == 'musketeer') {
-                    this.musketeer(chan)
-                } else if (text == 'hammer knight') {
-                    this.hammerKnight(chan)
-                } else if (text == 'cavalry knight') {
-                    this.cavalryKnight(chan)
-                } else if (text == 'golem') {
-                    this.golem(chan)
-                } else if (text == 'fire mage') {
-                    this.fireMage(chan)
-                } else if (text == 'gunner') {
-                    this.gunner(chan)
-                } else if (text == 'priest') {
-                    this.priest(chan)
-                } else if (text == 'aladdin') {
-                    this.aladdin(chan)
-                } else if (text == 'griffin rider') {
-                    this.griffinRider(chan)
-                } else if (text == 'hot-blooded xuanzang') {
-                    this.hotBloodedXuanzang(chan)
-                } else if (text == 'pilot') {
-                    this.pilot(chan)
-                } else if (text == 'steampunk') {
-                    this.steampunk(chan)
-                } else if (text == 'valkyrie') {
-                    this.valkyrie(chan)
-                } else if (text == 'flame spirit') {
-                    this.flameSpirit(chan)
-                } else if (text == 'cleric') {
-                    this.cleric(chan)
-                } else if (text == 'winged knight') {
-                    this.wingedKnight(chan)
-                }
-            } else {
-                this.error(chan)
-                this.log.log('UNITEMBED', '[ERROR] Argument: "' + text + `" doesn't exist.`)
-            }
+            humanIc: '<:menschen:358338613429272598>',
+            elfIc: '<:elfen:358338594789785600>',
+            undeadIc: '<:untote:358338633759064066>',
+            orcIc: '<:orks:358338656471220234>',
+            human: '<:mensch:328211338197467137>',
+            elf: '<:elf:328211389590011904>',
+            undead: '<:untot:328211221042167821>',
+            orc: '<:ork:328211281456791552>',
+            pydmg: '<:py:358332040283947008>',
+            madmg: '<:magic:358335426269806594>',
+            zwi: '<:zwi:358335521061077004>',
+            male: '<:male:358332019668680708>',
+            female: '<:female:358335385119752212>',
+            fly: '<:nair:358335488987365388>',
+            invis: '<:usi:358335509971599363>',
+            gen0: '<:gen:358335414488268800>',
+            gen1: '<:gen1:358730065845944320>',
+            gen2: '<:gen2:358730095503867907>',
+            gen3: '<:gen3:358730084556865548>',
+            gen4: '<:gen4:358730104236670977>',
+            gen5: '<:gen5:358730112130220045>',
+            gen6: '<:gen6:358730120703508481>',
+            gen7: '<:gen7:358730135769448448>',
+            gen8: '<:gen8:358730145789378571>',
+            gen9: '<:gen9:360444689750687754>',
+            gen10: '<:gen10:402192079222210563>'
         }
 
         /**
@@ -347,7 +235,7 @@ __/\\\________/\\\__/\\\________/\\\__/\\\\____________/\\\\_____/\\\\\\\\\_____
                 .setDescription(`${this.emojis.humanIc}__**Entwickelter Golem${this.emojis.humanIc}**__\n\n★★★★★★ [Boden Einheit] ${this.emojis.pydmg}${this.emojis.humanIc}${this.emojis.zwi}`)
                 .addField('⠀','__**Fähigkeiten:**__\n\n+ Normaler Angriff: Fügt den nahestehenden Gegnern um das Ziel Flächenschaden hinzu, wobei das Ziel zu 100% betäubt wird und die umliegenden Einheiten zufällig betäubt werden.\n\n+ Skillangriff: Beschwört ein Schutzschild das gegen physische Angriffe immun macht und das Ziel zu 100% betäubt und dabei doppelten schaden macht. Umliegende Gegner werden zufällig Betäubt.')
                 .addField('⠀','+ Spezielle Fähigkeit 1: Werde niemals ohnmächtig (Immun gegen Betäubung)\n\n+ Spezielle Fähigkeit 2: Bei eingehenden Angriffen besteht eine Chance darauf, dass ein Schild beschworen wird, welches gegen 99% der physischen und magischen Angriffe schützt.')
-                .setFooter('Liste aller Einheiten mit .unit list')
+                .setFooter('Liste aller Einheiten mit .einheit liste')
                 .setThumbnail('https://cdn.discordapp.com/attachments/416337633871003659/416340091116453918/UI_UNIT_ICONS0014.png')
             chan.send('', emb).then((m) => {
                 message = m
@@ -595,7 +483,289 @@ __/\\\\\\\\\\\\\\\__/\\\______________/\\\________/\\\__/\\\\\\\\\\\\\\\_____/\\
         _\///////////////__\///////////////________\///________\///////////////____\///////////_____
 */
 
-        
+        this.elfArcher = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.elfWarrior = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.poisonArcher = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.highElfArcher = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.greenEagle = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.windMage = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.ent = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.wolfWarrior = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.unicornKnight = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.fairy = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.druid = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.forestGuardian = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.hoydenGoku = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.alchemist = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+        this.sylphid = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.swordDancer = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.hippogriff = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.elementalist = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
+
+        this.windwalker = function(chan) {
+            var message
+            var emb = new Discord.RichEmbed()
+                .setColor(this.COLORS.elf)
+                .setDescription(`${this.emojis.elf}__**NAME DES ENTWICKELTEN${this.emojis.elf}**__\n\n★★★★★★ [BODEN / FLIEGENDE Einheit] ${this.emojis.pydmg}${this.emojis.elfIc}${this.emojis.zwi}`)
+                .addField('⠀','__**Fähigkeiten:**__\n\nANGRIFFE')
+                .addField('⠀','SPEZIELLE FÄHIGKEITEN')
+                .setFooter('Liste aller Einheiten mit .unit list')
+                .setThumbnail('LINK ZUM BILD')
+            chan.send('', emb).then((m) => {
+                message = m
+            })
+            return message
+        }        
 
 /*
 __/\\\________/\\\__/\\\\\_____/\\\__/\\\\\\\\\\\\_____/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\________/\\\\\\\\\\\___        
